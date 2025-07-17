@@ -182,7 +182,7 @@ git clone https://github.com/Motandarina/pajareando-android-app.git
 - Sistema de navegación y UX
 
 ## Licencia
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.md) para detalles.
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para detalles.
 
 ---
 ### 🌿 Inspiración
