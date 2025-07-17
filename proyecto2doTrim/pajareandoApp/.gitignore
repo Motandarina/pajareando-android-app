@@ -1,15 +1,212 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# =======================================
+# GITIGNORE COMPLETO PARA PROYECTO ANDROID
+# =======================================
+
+# ===== ARCHIVOS CRÍTICOS A IGNORAR =====
+# ⚠️ IMPORTANTE: Estos archivos contienen información sensible
+
+# Firebase - CRÍTICO (contiene claves API)
+**/google-services.json
+**/GoogleService-Info.plist
+
+# Archivos de claves y certificados
+*.keystore
+*.jks
+key.properties
+release.properties
+signing.properties
+
+# Variables de entorno y configuración local
+.env
 local.properties
+
+# ===== GRADLE =====
+.gradle/
+build/
+*/build/
+**/build/
+gradlew
+gradlew.bat
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
+
+# Archivos de configuración de Gradle
+gradle.properties
+settings.gradle
+settings.gradle.kts
+build.gradle.kts
+**/build.gradle.kts
+gradle/libs.versions.toml
+
+# Archivos de ProGuard
+**/proguard-rules.pro
+**/consumer-rules.pro
+
+# ===== ANDROID STUDIO / IntelliJ IDEA =====
+.idea/
+*.iml
+*.iws
+*.ipr
+.navigation/
+captures/
+output.json
+.externalNativeBuild/
+.cxx/
+
+# ===== ARCHIVOS DE COMPILACIÓN =====
+# Archivos de salida de compilación
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# Archivos generados automáticamente
+/gen/
+/bin/
+/libs/
+/obj/
+
+# R class y BuildConfig
+**/R.java
+**/BuildConfig.java
+
+# ===== LOGS Y TEMPORAL =====
+*.log
+*.tmp
+.externalNativeBuild/
+.cxx/
+.DS_Store
+Thumbs.db
+
+# ===== TESTING =====
+/androidTest/
+/test/
+/src/test/
+/src/androidTest/
+
+# ===== BACKUPS Y CACHE =====
+*.backup
+.cache/
+node_modules/
+
+# ===== ARCHIVOS ESPECÍFICOS DE ANDROID =====
+# Archivos de recursos compilados
+*.ap_
+*.aab
+*.apk
+*.dex
+
+# Archivos de backup de Android Studio
+*.backup
+*.bak
+
+# Archivos de configuración XML específicos del entorno
+**/backup_rules.xml
+**/data_extraction_rules.xml
+
+# ===== ARCHIVOS DE USUARIO Y CONFIGURACIÓN =====
+# Configuraciones personales
+.settings/
+.metadata/
+.project
+.classpath
+
+# ===== OTROS IDEs =====
+# VS Code
+.vscode/
+
+# Eclipse
+.project
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# ===== ANDROID NDK =====
+*.so
+*.a
+*.o
+
+# ===== CONTENIDO MULTIMEDIA PESADO =====
+# Descomenta si tienes archivos multimedia muy pesados
+# *.mp4
+# *.mov
+# *.avi
+# *.wav
+# *.mp3
+
+# ===== ARCHIVOS DE VERSIONING =====
+.gitignore.bak
+*.orig
+
+# ===== ARCHIVOS DE SISTEMA =====
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ===== ARCHIVOS DE FIREBASE ESPECÍFICOS =====
+# Crashlytics
+crashlytics-build.properties
+crashlytics.properties
+
+# ===== ARCHIVOS DE LINT =====
+lint-results.xml
+lint-results.html
+
+# ===== ARCHIVOS DE DOCUMENTACIÓN GENERADA =====
+/doc/
+/docs/
+javadoc/
+
+# ===== ARCHIVOS DE DEPLOYMENT =====
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# ===== ARCHIVOS DE KOTLIN =====
+*.kotlin_module
+*.kotlin_builtins
+
+# ===== ARCHIVOS DE FLUTTER (si aplica) =====
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+
+# ===== ARCHIVOS DE REACT NATIVE (si aplica) =====
+# React Native
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===== ARCHIVOS DE CORDOVA (si aplica) =====
+platforms/
+plugins/
+www/
+
+# ===== ARCHIVOS ESPECÍFICOS DEL PROYECTO =====
+# Agrega aquí archivos específicos de tu proyecto
+# Ejemplo:
+# mi-archivo-config.json
+# datos-prueba/
